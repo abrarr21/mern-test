@@ -37,3 +37,12 @@ vi.mock("../db", () => ({
 client: { sum: { create: vi.fn() } },
 }));
 ```
+
+Here, client object has a lot functions and one way to mock them all is:
+
+- Deep mocking
+
+`pnpm add --save-dev vitest-mock-extended`
+
+Create **mock**/db.ts file where db.ts file is present
+Then, in test/index.test.ts `vi.mock("../db)` is enough to mock everything

@@ -2,9 +2,11 @@ import { describe, it, expect, vi } from "vitest";
 import request from "supertest";
 import { app } from "../index";
 
-vi.mock("../db", () => ({
-    client: { sum: { create: vi.fn() } },
-}));
+// vi.mock("../db", () => ({
+//     client: { sum: { create: vi.fn() } },
+// }));
+
+vi.mock("../db");
 
 describe("POST /sum", () => {
     it("Should return the sum of two numbers", async () => {
