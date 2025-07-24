@@ -1,0 +1,31 @@
+{
+    "name": "express-vitest",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "ts-node src/bin.ts",
+        "build": "tsc -b",
+        "start": "node dist/bin.js",
+        "test": "vitest"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.13.1",
+    "devDependencies": {
+        "@types/express": "^5.0.3",
+        "@types/node": "^24.1.0",
+        "@types/supertest": "^6.0.3",
+        "supertest": "^7.1.4",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "@prisma/client": "6.12.0",
+        "express": "^5.1.0",
+        "prisma": "^6.12.0",
+        "vitest": "^3.2.4",
+        "zod": "^4.0.8"
+    }
+}
